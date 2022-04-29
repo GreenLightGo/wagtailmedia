@@ -66,6 +66,7 @@ GroupMediaPermissionFormSet = collection_member_permission_formset_factory(
     [
         ("add_media", _("Add"), _("Add/edit media you own")),
         ("change_media", _("Edit"), _("Edit any media")),
+        ("choose_media", _("Choose"), _("Select media in choosers")),
     ],
     "wagtailmedia/permissions/includes/media_permissions_formset.html",
 )

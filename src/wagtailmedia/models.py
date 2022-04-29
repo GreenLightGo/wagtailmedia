@@ -155,6 +155,11 @@ class Media(AbstractMedia):
         "tags",
     )
 
+    class Meta:
+        permissions = [
+            ("choose_media", "Can choose media"),
+        ]
+
 
 def get_media_model():
     from django.apps import apps
